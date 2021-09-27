@@ -62,8 +62,8 @@ if __name__ == "__main__":
                     # _, pe_neuro, ee_neuro, _ = env_neuro.play(pcont=genome_neuro)
                     # total_gain_neuro += pe_neuro - ee_neuro
 
-                if winners_neat[enemy][1] < total_gain_neat:
-                    winners_neat[enemy] = (i, total_gain_neat)
+                if winners_neat[enemy-1][1] < total_gain_neat:
+                    winners_neat[enemy-1] = (i, total_gain_neat)
                 # if winners_neuro[enemy][1] < total_gain_neuro:
                 #     winners_neuro[enemy] = (i, total_gain_neuro)
 
