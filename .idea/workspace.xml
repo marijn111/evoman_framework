@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad2a7fc6-273b-4e77-82ac-f9f2e4b85b3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ass1_individial_gain.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ass1_statistical_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ass1_visualization.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neat_config.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ea1_specialist_neat.py" beforeDir="false" afterPath="$PROJECT_DIR$/ea1_specialist_neat.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +55,7 @@
       <workItem from="1632550906895" duration="3359000" />
       <workItem from="1632664103652" duration="7752000" />
       <workItem from="1632748890851" duration="151000" />
-      <workItem from="1632760063960" duration="33000" />
+      <workItem from="1632760063960" duration="1594000" />
     </task>
     <servers />
   </component>
