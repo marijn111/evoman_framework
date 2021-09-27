@@ -15,6 +15,8 @@ neat_config_filename = 'neat_config.txt'
 num_experiments = 10
 num_best_solution_runs = 5
 
+os.environ["SDL_VIDEODRIVER"] = "dummy"
+
 config = neat.Config(
     genome_type=neat.DefaultGenome,
     reproduction_type=neat.DefaultReproduction,
