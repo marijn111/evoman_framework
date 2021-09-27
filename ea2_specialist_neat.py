@@ -7,8 +7,7 @@
 # imports framework
 import sys, os
 import neat
-sys.path.insert(0, 'evoman')
-from environment import Environment
+from ea2_environment import CustomEnvironment
 from ass1_controller import PlayerController
 import pickle
 import pandas as pd
@@ -20,7 +19,7 @@ neat_config_filename = 'neat_config.txt'
 # choose this for not using visuals and thus making experiments faster
 os.environ["SDL_VIDEODRIVER"] = "dummy"
 
-experiment_name = 'neat_algorithm'
+experiment_name = 'custom_neat_algorithm'
 if not os.path.exists(experiment_name):
     os.makedirs(experiment_name)
 
@@ -51,8 +50,8 @@ def eval_genomes(genomes, config):
 
     max_fitness = max(fitness_values)
     mean_fitness = sum(fitness_values)/len(fitness_values)
-    df = df.append({'fitness': max_fitness, 'type': 'max_fitness', 'enemy': enemy_number, 'gen': gen_iteration, 'algo': 'neat'}, ignore_index=True)
-    df = df.append({'fitness': mean_fitness, 'type': 'mean_fitness', 'enemy': enemy_number, 'gen': gen_iteration, 'algo': 'neat'}, ignore_index=True)
+    df = df.append({'fitness': max_fitness, 'type': 'max_fitness', 'enemy': enemy_number, 'gen': gen_iteration, 'algo': 'custom_neat'}, ignore_index=True)
+    df = df.append({'fitness': mean_fitness, 'type': 'mean_fitness', 'enemy': enemy_number, 'gen': gen_iteration, 'algo': 'custom_neat'}, ignore_index=True)
     gen_iteration += 1
 
 
@@ -63,7 +62,7 @@ if __name__ == "__main__":
         enemy_number = enemy
 
 
-        env = Environment(
+        env = CustomEnvironment(
             experiment_name=experiment_name,
             enemies=[enemy],
             player_controller=PlayerController()
@@ -83,8 +82,8 @@ if __name__ == "__main__":
             p.add_reporter(neat.Checkpointer(5))
 
             winner = p.run(eval_genomes, 15)
-            pickle.dump(winner, open('winner_objects/neat-winner_{}_{}.pickle'.format(enemy, i), 'wb'))
+            pickle.dump(winner, open('custom_winner_objects/neat-winner_{}_{}.pickle'.format(enemy, i), 'wb'))
 
 
-df.to_csv('neat.csv', index=False)
+df.to_csv('custom_neat.csv', index=False)
 
