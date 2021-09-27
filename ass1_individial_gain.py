@@ -38,7 +38,7 @@ if __name__ == "__main__":
         if determine_winners:
             for i in range(num_experiments):
                 # genome_neuro = pickle.load(open('winner_objects/neat-winner_{}_{}'.format(enemy, i), 'rb'))
-                genome_neat = pickle.load(open('winner_objects/neat-winner_{}_{}'.format(enemy, i), 'rb'))
+                genome_neat = pickle.load(open('winner_objects/neat-winner_{}_{}.pickle'.format(enemy, i), 'rb'))
                 ffn = neat.nn.FeedForwardNetwork.create(genome_neat, config)
 
                 total_gain_neat = 0
