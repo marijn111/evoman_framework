@@ -1,5 +1,4 @@
 import matplotlib.pyplot as plt
-import matplotlib as mpl
 import pandas as pd
 import seaborn as sns
 
@@ -9,13 +8,16 @@ import seaborn as sns
 
 enemies = [1, 2, 3]
 
-df = pd.read_csv('neat-results.csv')
+df = pd.read_csv('neat.csv')
 
 for e in enemies:
     e_df = df.loc[df['enemy'] == e]
 
-    ax = sns.lineplot(data=e_df, x='gen', y='value', hue='EA', style='metric')
+    ax = sns.lineplot(data=e_df, x='gen', y='fitness', hue='algo', style='type')
     ax.set(xlabel='generation', ylabel='fitness', title=f'enemy {e}')
 
     plt.tight_layout()
-    plt.savefig(f'results-enemy-group-{e}.png')
+    plt.savefig(f'ea1-lineplot-enemy-{e}.png')
+    plt.clf()
+    plt.cla()
+
