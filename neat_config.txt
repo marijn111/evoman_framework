@@ -3,7 +3,7 @@
 [NEAT]
 fitness_criterion     = max
 fitness_threshold     = 99.9
-pop_size              = 50
+pop_size              = 20
 reset_on_extinction   = True
 
 [DefaultStagnation]

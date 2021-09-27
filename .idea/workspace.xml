@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad2a7fc6-273b-4e77-82ac-f9f2e4b85b3a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neat-checkpoint-11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/neat-checkpoint-14" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/neat-checkpoint-4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/neat-checkpoint-8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/neat_config.txt" beforeDir="false" afterPath="$PROJECT_DIR$/neat_config.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +86,7 @@
       <workItem from="1632550906895" duration="3359000" />
       <workItem from="1632664103652" duration="7752000" />
       <workItem from="1632748890851" duration="151000" />
-      <workItem from="1632760063960" duration="2865000" />
+      <workItem from="1632760063960" duration="3128000" />
     </task>
     <servers />
   </component>
@@ -91,6 +94,6 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/evoman_framework$test.coverage" NAME="test Coverage Results" MODIFIED="1632769188799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/evoman_framework$test.coverage" NAME="test Coverage Results" MODIFIED="1632769272559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
