@@ -33,8 +33,8 @@ if __name__ == "__main__":
     df = pd.DataFrame(columns=['enemy', 'EA', 'gain'])
 
     determine_winners = True
-    winners_neat = [(0, -990), (0, -999)]
-    winners_neuro = [(0, -999), (0, -999)]
+    winners_neat = [(0, -990), (0, -999), (0, -999)]
+    # winners_neuro = [(0, -999), (0, -999)]
 
     for enemy in enemies:
         if determine_winners:
