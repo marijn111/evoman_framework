@@ -71,7 +71,7 @@ if __name__ == "__main__":
         # print(winners_neuro)
 
         # genome_neuro = pickle.load(open('winner_objects/neat-winner_{}_{}'.format(enemy, winners_neuro[enemy][0]), 'rb'))
-        genome_neat = pickle.load(open('winner_objects/neuro-winner_{}_{}'.format(enemy, winners_neat[enemy][0]), 'rb'))
+        genome_neat = pickle.load(open('winner_objects/neat-winner_{}_{}.pickle'.format(enemy, winners_neat[enemy][0]), 'rb'))
         ffn = neat.nn.FeedForwardNetwork.create(genome_neat, config)
 
         for v in range(num_best_solution_runs):
