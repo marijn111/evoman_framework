@@ -12,6 +12,11 @@ def sigmoid_activation(x):
 	return 1./(1.+np.exp(-x))
 
 
+def softmax(x):
+	e_x = np.exp(x - np.max(x))
+	return e_x / e_x.sum()
+
+
 # implements controller structure for player
 class player_controller(Controller):
 	def __init__(self, _n_hidden):

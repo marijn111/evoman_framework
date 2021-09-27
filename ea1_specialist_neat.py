@@ -82,7 +82,7 @@ if __name__ == "__main__":
             p.add_reporter(neat.Checkpointer(5))
 
             winner = p.run(eval_genomes, 15)
-            pickle.dump(winner, open('winner_objects/neat-winner_{}_{}'.format(enemy, i), 'wb'))
+            pickle.dump(winner, open('winner_objects/neat-winner_{}_{}.pickle'.format(enemy, i), 'wb'))
 
 
 df.to_csv('neat.csv', index=False)
