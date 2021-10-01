@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad2a7fc6-273b-4e77-82ac-f9f2e4b85b3a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ass1_statistical_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/ass1_statistical_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ass1_visualization.py" beforeDir="false" afterPath="$PROJECT_DIR$/ass1_visualization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ea2_environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/ea2_environment.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/individual-gain/evoman_logs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/individual-gain/evoman_logs.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,6 +130,7 @@
       <workItem from="1632748890851" duration="151000" />
       <workItem from="1632760063960" duration="10435000" />
       <workItem from="1632814044968" duration="14219000" />
+      <workItem from="1632993976172" duration="96000" />
     </task>
     <servers />
   </component>
