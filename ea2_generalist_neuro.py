@@ -188,6 +188,6 @@ if __name__ == "__main__":
                     pop[i] = elites[i] + children
 
             print("winner:", winner)
-            pickle.dump(winner[0], open('neuro_winner/neuro-generalist-winner_{}_{}.pickle'.format(e, r), 'wb'))
+            pickle.dump(winner[0], open('neuro_winners/generalist-winner_{}_{}.pickle'.format(e, r), 'wb'))
 
     df.to_csv('neuro-generalist-results.csv', index=False)

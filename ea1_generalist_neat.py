@@ -81,7 +81,7 @@ if __name__ == "__main__":
             p.add_reporter(neat.Checkpointer(5))
 
             winner = p.run(eval_genomes, 15)
-            pickle.dump(winner, open('winner_objects/neat-generalist-winner_{}_{}.pickle'.format(e, i), 'wb'))
+            pickle.dump(winner, open('neat-winners/generalist-winner_{}_{}.pickle'.format(e, i), 'wb'))
 
 
 df.to_csv('neat_generalist.csv', index=False)
