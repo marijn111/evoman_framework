@@ -15,7 +15,7 @@ import pandas as pd
 
 num_experiments = 10
 enemies = [[1, 2, 3], [4,5,6]]
-neat_config_filename = 'neat_generalist_config.txt'
+neat_config_filename = 'neat_config.txt'
 
 # choose this for not using visuals and thus making experiments faster
 os.environ["SDL_VIDEODRIVER"] = "dummy"
