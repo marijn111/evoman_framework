@@ -21,7 +21,7 @@ rng = np.random.default_rng()
 df = pd.DataFrame(columns=['fitness', 'type', 'group', 'gen', 'algo'])
 
 # parameters
-enemy_groups = [[1, 3], [2, 4]]
+enemy_groups = [[1, 2, 3], [3, 4, 5]]
 number_of_runs = 10
 number_hidden_nodes = 10
 max_gen = 10
