@@ -3,6 +3,7 @@ import pickle
 import sys
 
 import matplotlib as mpl
+import numpy as np
 import seaborn as sns
 
 sys.path.insert(0, 'evoman')
@@ -50,6 +51,7 @@ if __name__ == "__main__":
     genome_neuro = pickle.load(open('neuro_winners/generalist-winner_{}_{}.pickle'.format(winning_group, winners_neuro[winning_group][0]), 'rb'))
 
     # TODO: export winning neuro genome to text file
+    np.savetxt('ass2_generalist_best.txt', genome_neuro)
 
     avg_energy_table = [[0,0] for i in range(1, num_enemies+1)]
     for v in range(num_repetitions):
