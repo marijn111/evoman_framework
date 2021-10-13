@@ -24,7 +24,7 @@ df = pd.DataFrame(columns=['fitness', 'type', 'group', 'gen', 'algo'])
 enemy_groups = [[1, 2, 3], [3, 4, 5]]
 number_of_runs = 10
 number_hidden_nodes = 10
-max_gen = 10
+max_gen = 15
 max_stag = 10
 pop_size = 20
 surv_rate = 0.3
@@ -103,7 +103,7 @@ if __name__ == "__main__":
             stag_array = [[0, -99] for _ in range(number_species)]
             winner = [None, 0]
 
-            for g in range(max_gen):
+            for g in range(1, max_gen+1):
 
                 print(f"generation {g}")
 

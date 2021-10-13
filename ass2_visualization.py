@@ -8,11 +8,11 @@ mpl.rcParams['figure.dpi'] = 300
 
 enemies = [[1, 2, 3], [4, 5, 6]]
 
-df = pd.read_csv('neat_generalist.csv')
-df2 = pd.read_csv('neuro-generalist-results.csv')
+df = pd.read_csv('neat_generalist_results.csv')
+df2 = pd.read_csv('neuro_generalist_results.csv')
 
 for e, enemy_group in enumerate(enemies):
-    e_df = pd.concat([df.loc[df['enemy'] == e], df2.loc[df['enemy'] == e]], ignore_index=True)
+    e_df = pd.concat([df.loc[df['group'] == e], df2.loc[df['group'] == e]], ignore_index=True)
 
     ax = sns.lineplot(data=e_df, x='gen', y='fitness', hue='algo', style='type')
     ax.set(xlabel='generation', ylabel='fitness', title=f'enemies {enemy_group}')
