@@ -12,10 +12,11 @@ from demo_controller import player_controller
 sns.set(font_scale=1.2)
 mpl.rcParams['figure.dpi'] = 300
 
-experiment_name = 'test-best'
+experiment_name = 'ultimate_winner'
 if not os.path.exists(experiment_name):
     os.makedirs(experiment_name)
 
+os.environ["SDL_VIDEODRIVER"] = "dummy"
 
 enemies = [[1, 2, 3], [4, 5, 6]]
 determine_winners = True
