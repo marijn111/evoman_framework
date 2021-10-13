@@ -5,12 +5,12 @@ df = pd.read_csv('gains_winners_duo.csv')
 
 df_neat = df[df.algo == "neat"]
 df_custom_neat = df[df.algo == "custom_neat"]
-df1_neat = df[(df.enemy == 1) & (df.algo == "neat")]
-df1_custom_neat = df[(df.enemy == 1) & (df.algo == "custom_neat")]
-df2_neat = df[(df.enemy == 2) & (df.algo == "neat")]
-df2_custom_neat = df[(df.enemy == 2) & (df.algo == "custom_neat")]
-df3_neat = df[(df.enemy == 3) & (df.algo == "neat")]
-df3_custom_neat = df[(df.enemy == 3) & (df.algo == "custom_neat")]
+df1_neat = df[(df.enemy_group == 1) & (df.algo == "neat")]
+df1_custom_neat = df[(df.enemy_group == 1) & (df.algo == "custom_neat")]
+df2_neat = df[(df.enemy_group == 2) & (df.algo == "neat")]
+df2_custom_neat = df[(df.enemy_group == 2) & (df.algo == "custom_neat")]
+df3_neat = df[(df.enemy_group == 3) & (df.algo == "neat")]
+df3_custom_neat = df[(df.enemy_group == 3) & (df.algo == "custom_neat")]
 
 
 # Comparing results of both algorithms for all enemies
