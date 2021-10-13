@@ -51,7 +51,7 @@ if __name__ == "__main__":
 
     # TODO: export winning neuro genome to text file
 
-    avg_energy_table = [(0,0) for i in range(1, num_enemies+1)]
+    avg_energy_table = [[0,0] for i in range(1, num_enemies+1)]
     for v in range(num_repetitions):
         total_gain_neuro = 0
         for enemy in range(1, num_enemies+1):
@@ -62,8 +62,8 @@ if __name__ == "__main__":
             _, pe_neuro, ee_neuro, _ = env_neuro.play(pcont=genome_neuro)
             total_gain_neuro += pe_neuro - ee_neuro
 
-            avg_energy_table[enemy][0] += pe_neuro
-            avg_energy_table[enemy][1] += ee_neuro
+            avg_energy_table[enemy-1][0] += pe_neuro
+            avg_energy_table[enemy-1][1] += ee_neuro
 
     for e, enem in enumerate(avg_energy_table):
         print(f'Enemy {e+1}')
