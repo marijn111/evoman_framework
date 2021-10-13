@@ -1,10 +1,10 @@
 import pandas as pd
 import scipy.stats as sc
 
-neuro_df = pd.read_csv('ass2_neuro_gain.csv')
-neat_df = pd.read_csv('ass2_neat_gain.csv')
+# neuro_df = pd.read_csv('ass2_neuro_gain.csv')
+# neat_df = pd.read_csv('ass2_neat_gain.csv')
 
-df = pd.concat(neuro_df, neat_df)
+df = pd.read_csv('ass2_gains_winners.csv')
 
 df_neat = df[df.algo == "neat"]
 df_neuro = df[df.algo == "neuro"]

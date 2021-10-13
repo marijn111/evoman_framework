@@ -1,0 +1,24 @@
+Enemy 1
+Player energy: 0.0
+Enemy Energy: 30.0
+Enemy 2
+Player energy: 0.0
+Enemy Energy: 80.0
+Enemy 3
+Player energy: 0.0
+Enemy Energy: 30.0
+Enemy 4
+Player energy: 16.60000000000023
+Enemy Energy: 0.0
+Enemy 5
+Player energy: 74.56000000000024
+Enemy Energy: 0.0
+Enemy 6
+Player energy: 0.0
+Enemy Energy: 90.0
+Enemy 7
+Player energy: 0.0
+Enemy Energy: 100.0
+Enemy 8
+Player energy: 47.8000000000003
+Enemy Energy: 0.0

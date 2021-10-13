@@ -1,0 +1,8 @@
+Comparing results of both algorithms for both groups
+223.0 0.5427717015170068
+
+Comparing results of both algorithms for first enemy group (1, 2, 3)
+53.0 0.8501067391385259
+
+Comparing results of both algorithms for second enemy group (4, 5, 6)
+57.0 0.6231762238821174
