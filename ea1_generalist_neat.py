@@ -84,5 +84,5 @@ if __name__ == "__main__":
             pickle.dump(winner, open('neat_winners/generalist-winner_{}_{}.pickle'.format(e, i), 'wb'))
 
 
-df.to_csv('neat_generalist.csv', index=False)
+df.to_csv('neat_generalist_result.csv', index=False)
 

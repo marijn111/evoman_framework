@@ -175,12 +175,10 @@ if __name__ == "__main__":
                     max_fitnesses = np.delete(max_fitnesses, i)
 
                 for _ in range(pop_lost):
-                    max_fitnesses_shift = max_fitnesses - min(
-                        max_fitnesses)
+                    max_fitnesses_shift = max_fitnesses - min(max_fitnesses)
                     p = max_fitnesses_shift / sum(max_fitnesses_shift)
                     sub_pop = rng.choice(pop, p=p)
-                    np.vstack((sub_pop, sub_pop[
-                        -1]))
+                    np.vstack((sub_pop, sub_pop[-1]))
 
                 for i in range(number_species):
                     number_children = len(pop[i]) - number_elites
@@ -190,4 +188,4 @@ if __name__ == "__main__":
             print("winner:", winner)
             pickle.dump(winner[0], open('neuro_winners/generalist-winner_{}_{}.pickle'.format(e, r), 'wb'))
 
-    df.to_csv('neuro-generalist-results.csv', index=False)
+    df.to_csv('neuro_generalist_results.csv', index=False)
